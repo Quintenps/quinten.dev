@@ -19,7 +19,7 @@ export const clients: Client[] = [
   },
   {
     companyName: "Conclusion",
-    companyLogo: "/clients/Conclusion.jpg",
+    companyLogo: "/clients/conclusion.jpg",
     current: false,
     role: "Software engineer",
     description:
