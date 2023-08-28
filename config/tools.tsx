@@ -1,0 +1,51 @@
+import { Tool } from "@/app/types";
+
+export const tools: Tool[] = [
+  {
+    name: ".NET Core",
+    image: "/tools/dotnet.png",
+    usage: "My personal choice when writing backend software",
+  },
+  {
+    name: "React",
+    image: "/tools/react.png",
+    usage:
+      "Combined with NextJS with Typescript support is my usual frontend stack",
+  },
+  {
+    name: "Docker",
+    image: "/tools/docker.png",
+    usage: "Easiest way to deploy software, containerized software ftw",
+  },
+  {
+    name: "CloudFlare",
+    image: "/tools/cloudflare.png",
+    usage: "CDN, DNS, WAF and Pages, been using them since 2014",
+  },
+  {
+    name: "Github",
+    image: "/tools/github.png",
+    usage: "Version control and CICD, Github actions",
+  },
+  {
+    name: "AWS",
+    image: "/tools/aws.png",
+    usage: "My preferred Cloud platform for enterprise software",
+  },
+];
+
+export const computers: Tool[] = [
+  { name: "Windows", image: null, usage: "Desktop" },
+  { name: 'Macbook Pro 16" (2021)', image: null, usage: "Laptop" },
+  { name: "Pixel 5", image: null, usage: "Phone" },
+  { name: "Optiplex 3050 Micro", image: null, usage: "Homeserver" },
+  { name: "Hetzner VPS", image: null, usage: "Datacenter (KVM) server" },
+];
+
+export const certifications: Tool[] = [
+  {
+    name: "AWS Cloud Practitioner",
+    image: "/certifications/aws-certified-cloud-practitioner.png",
+    usage: "",
+  },
+];
