@@ -14,7 +14,7 @@ export default function Contact() {
         <Link href="//twitter.com/quintenps" className="font-semibold">
           Twitter
         </Link>{" "}
-        or perhaps see of my code at{" "}
+        or perhaps see some of my code at{" "}
         <Link href="//github.com/quintenps" className="font-semibold">
           Github
         </Link>

@@ -10,7 +10,7 @@ export const tools: Tool[] = [
     name: "React",
     image: "/tools/react.png",
     usage:
-      "Combined with NextJS with Typescript support is my usual frontend stack",
+      "Combined with NextJS with Typescript is my usual frontend choice",
   },
   {
     name: "Docker",
@@ -25,7 +25,7 @@ export const tools: Tool[] = [
   {
     name: "Github",
     image: "/tools/github.png",
-    usage: "Version control and CICD, Github actions",
+    usage: "Version control & Github Actions",
   },
   {
     name: "AWS",

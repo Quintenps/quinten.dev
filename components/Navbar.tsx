@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useSelectedLayoutSegment } from "next/navigation";
 import { useState } from "react";
@@ -15,7 +16,7 @@ export default function Navbar() {
   const menuItems = [
     { title: "about me", href: "/", segment: null },
     { title: "clients", href: "/clients", segment: "clients" },
-    { title: "tools I use", href: "/tools", segment: "tools" },
+    { title: "tools", href: "/tools", segment: "tools" },
     { title: "contact", href: "/contact", segment: "contact" },
   ];
 
