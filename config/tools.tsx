@@ -46,6 +46,11 @@ export const certifications: Tool[] = [
   {
     name: "AWS Cloud Practitioner",
     image: "/certifications/aws-certified-cloud-practitioner.png",
-    usage: "",
+    usage: "https://aw.certmetrics.com/amazon/public/verification.aspx (Code YMSR0XN19JE11G9R)",
   },
+  {
+    name: "Junior Angular Developer",
+    image: "/certifications/angular.png",
+    usage: "https://interstate21.com/certificate/?code=4I172UG"
+  }
 ];
