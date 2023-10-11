@@ -52,5 +52,10 @@ export const certifications: Tool[] = [
     name: "Junior Angular Developer",
     image: "/certifications/angular.png",
     usage: "https://interstate21.com/certificate/?code=4I172UG"
+  },
+  {
+    name: "Angular Certified Developer",
+    image: "/certifications/angular.png",
+    usage: "https://interstate21.com/certificate/?code=4J1051E"
   }
 ];
