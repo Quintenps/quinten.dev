@@ -37,7 +37,7 @@ export const tools: Tool[] = [
 export const computers: Tool[] = [
   { name: "Windows", image: null, usage: "Desktop" },
   { name: 'Macbook Pro 16" (2021)', image: null, usage: "Laptop" },
-  { name: "Pixel 5", image: null, usage: "Phone" },
+  { name: "iPhone 15 pro", image: null, usage: "Phone" },
   { name: "Optiplex 3050 Micro", image: null, usage: "Homeserver" },
   { name: "Hetzner VPS", image: null, usage: "Datacenter (KVM) server" },
 ];
