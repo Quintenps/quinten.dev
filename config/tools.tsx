@@ -44,6 +44,11 @@ export const computers: Tool[] = [
 
 export const certifications: Tool[] = [
   {
+    name: "Microsoft Certified: Azure Developer Associate",
+    image: "/certifications/microsoft-certified-associate-badge.svg",
+    usage: "Credential id: A5A5CF7F70FFD263",
+  },
+  {
     name: "AWS Cloud Practitioner",
     image: "/certifications/aws-certified-cloud-practitioner.png",
     usage: "https://aw.certmetrics.com/amazon/public/verification.aspx (Code YMSR0XN19JE11G9R)",
