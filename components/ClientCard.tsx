@@ -18,10 +18,12 @@ export default function ClientCard({ client }: { client: Client }) {
           )}
         </div>
         <div>
+
+          <h5 className="text-2xl font-semibold">{client.companyName}
           {client.current && (
-            <span className="text-xs italic text-gray-400">current</span>
+            <span className="text-xs italic mx-2 text-gray-400">current</span>
           )}
-          <h5 className="text-2xl font-semibold">{client.companyName}</h5>
+          </h5>
           <p className="font-thin text-md">{client.role}</p>
         </div>
       </div>

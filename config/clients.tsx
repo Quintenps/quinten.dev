@@ -2,20 +2,20 @@ import { Client } from "@/app/types";
 
 export const clients: Client[] = [
   {
-    companyName: "Cohesion",
-    companyLogo: "/clients/cohesion.jpg",
-    current: true,
-    role: "Software engineer",
-    description:
-      "Working as a consultant at various companies. Mainly focussed on .NET, React and AWS.",
-  },
-  {
     companyName: "OnlyOnce",
     companyLogo: "/clients/onlyonce.png",
     current: true,
     role: "Lead Software engineer",
     description:
       "Helping my dad with a SaaS startup. I mostly try to focus on the software development but often also try to give advice or my opinion on functionality or design.",
+  },
+  {
+    companyName: "Cohesion",
+    companyLogo: "/clients/cohesion.jpg",
+    current: false,
+    role: "Software engineer",
+    description:
+      "Working as a consultant at various companies. Mainly focussed on .NET, React and AWS.",
   },
   {
     companyName: "Conclusion",
