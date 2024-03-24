@@ -44,6 +44,11 @@ export const computers: Tool[] = [
 
 export const certifications: Tool[] = [
   {
+    name: "Professional Scrum Master I",
+    image: "/certifications/psm1.png",
+    usage: "https://www.scrum.org/certificates/1084535",
+  },
+  {
     name: "Microsoft Certified: Azure Developer Associate",
     image: "/certifications/microsoft-certified-associate-badge.svg",
     usage: "Credential id: A5A5CF7F70FFD263",
