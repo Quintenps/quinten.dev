@@ -4,7 +4,7 @@ export const tools: Tool[] = [
   {
     name: ".NET Core",
     image: "/tools/dotnet.png",
-    usage: "My personal choice when writing backend software",
+    usage: "My primary language for backend development",
   },
   {
     name: "React",
@@ -20,7 +20,7 @@ export const tools: Tool[] = [
   {
     name: "CloudFlare",
     image: "/tools/cloudflare.png",
-    usage: "CDN, DNS, WAF and Pages, been using them since 2014",
+    usage: "CDN, DNS, WAF and Pages, using them since 2014",
   },
   {
     name: "Github",
@@ -35,8 +35,8 @@ export const tools: Tool[] = [
 ];
 
 export const computers: Tool[] = [
-  { name: "Windows", image: null, usage: "Desktop" },
-  { name: 'Macbook Pro 16" (2021)', image: null, usage: "Laptop" },
+  { name: "Windows", image: null, usage: "Gaming desktop" },
+  { name: 'MacBook Pro (16-inch, Nov 2023, Three T)', image: null, usage: "Laptop" },
   { name: "iPhone 15 pro", image: null, usage: "Phone" },
   { name: "Optiplex 3050 Micro", image: null, usage: "Homeserver" },
   { name: "Hetzner VPS", image: null, usage: "Datacenter (KVM) server" },
@@ -46,26 +46,21 @@ export const certifications: Tool[] = [
   {
     name: "Professional Scrum Master I",
     image: "/certifications/psm1.png",
-    usage: "https://www.scrum.org/certificates/1084535",
+    usage: "Id: 1084535",
   },
   {
     name: "Microsoft Certified: Azure Developer Associate",
     image: "/certifications/microsoft-certified-associate-badge.svg",
-    usage: "Credential id: A5A5CF7F70FFD263",
+    usage: "Id: A5A5CF7F70FFD263",
   },
   {
     name: "AWS Cloud Practitioner",
     image: "/certifications/aws-certified-cloud-practitioner.png",
-    usage: "https://aw.certmetrics.com/amazon/public/verification.aspx (Code YMSR0XN19JE11G9R)",
-  },
-  {
-    name: "Junior Angular Developer",
-    image: "/certifications/angular.png",
-    usage: "https://interstate21.com/certificate/?code=4I172UG"
+    usage: "Id: YMSR0XN19JE11G9R",
   },
   {
     name: "Angular Certified Developer",
     image: "/certifications/angular.png",
-    usage: "https://interstate21.com/certificate/?code=4J1051E"
+    usage: "Id: 4J1051E"
   }
 ];

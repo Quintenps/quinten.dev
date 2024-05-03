@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function ToolCard({ tool }: { tool: Tool }) {
   return (
-    <div className="flex flex-row break-all flex-nowrap p-2 cursor-pointer items-center gap-4 border bg-white bg-opacity-5 text-white text-opacity-80 hover:text-opacity-100 border-white border-opacity-10">
+    <div className="flex flex-row p-2 cursor-pointer text-pretty text-ellipsis border bg-white bg-opacity-5 text-white text-opacity-80 hover:text-opacity-100 border-white border-opacity-10">
       {tool.image && (
-        <Image src={tool.image} height={48} width={48} alt={tool.name} />
+        <Image src={tool.image} className="self-center mx-5" width={40} height={40} alt={tool.name} />
       )}
       <div>
         <h5 className="font-semibold">{tool.name}</h5>

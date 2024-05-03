@@ -2,6 +2,14 @@ import { Client } from "@/app/types";
 
 export const clients: Client[] = [
   {
+    companyName: "mstack",
+    companyLogo: "/clients/mstack.png",
+    current: true,
+    role: "IT Consultant",
+    description:
+      "Working as a consultant at various companies. mstack is a company that focusses on the Microsoft stack.",
+  },
+  {
     companyName: "OnlyOnce",
     companyLogo: "/clients/onlyonce.png",
     current: true,
@@ -13,9 +21,9 @@ export const clients: Client[] = [
     companyName: "Cohesion",
     companyLogo: "/clients/cohesion.jpg",
     current: false,
-    role: "Software engineer",
+    role: "IT Consultant",
     description:
-      "Working as a consultant at various companies. Mainly focussed on .NET, React and AWS.",
+      "Working as a consultant at various companies. Cohesion has various consultants such as infra, Java and .NET.",
   },
   {
     companyName: "Conclusion",
@@ -37,7 +45,7 @@ export const clients: Client[] = [
     companyName: "CargoSnap",
     companyLogo: "/clients/cargosnap.png",
     current: false,
-    role: "Developer",
+    role: "Software engineer",
     description:
       "My sidejob during my study. I helped with backend software written in PHP (Laravel).",
   },

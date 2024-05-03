@@ -21,7 +21,7 @@ export default function Navbar() {
   ];
 
   return (
-    <aside className="md:w-64 md:min-h-screen px-10 border-b md:border-r border-white border-opacity-20">
+    <aside className="md:w-64 md:min-h-screen bg-white bg-opacity-5 px-10 md:border-r border-white border-opacity-20">
       <div className="flex place-content-between">
         <div className="my-6 font-semibold">
           <h2>Quinten Peels</h2>
