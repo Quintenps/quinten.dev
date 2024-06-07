@@ -62,5 +62,10 @@ export const certifications: Tool[] = [
     name: "Angular Certified Developer",
     image: "/certifications/angular.png",
     usage: "Id: 4J1051E"
+  },
+  {
+    name: "Github Foundations",
+    image: "/certifications/github-foundation.png",
+    usage: "Credly id: 6f00bb83-2ea6-4025-bbb3-ea561fb87921"
   }
 ];
