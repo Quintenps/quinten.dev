@@ -8,6 +8,9 @@ export type Client = {
   companyName: string;
   companyLogo: string;
   current: boolean;
+  start_date: string;
+  end_date: string;
+  tech_tags: string[];
   role: string;
   description: string;
 };
