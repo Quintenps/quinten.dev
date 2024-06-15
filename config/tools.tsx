@@ -20,17 +20,17 @@ export const tools: Tool[] = [
   },
   {
     name: "Principles, architecture and patterns",
-    usage: "SOLID Principles, Clean architecture, Design patterns, microservices, SonarCloud, automated testing (unit, regression), CQRS, Agile/Scrum"
+    usage: "SOLID Principles, Clean architecture, Design patterns, microservices, automated testing (unit, regression), CQRS, Agile/Scrum"
   },
   {
     name: "Software",
-    usage: "Rider, VSCode, Vim, Tableplus, Postman"
+    usage: "Rider, VSCode, Vim, Tableplus, Postman, SonarCloud"
   }
 ];
 
 export const computers: Computer[] = [
   { name: "Windows", description: "Gaming desktop", image: "/computers/hera.png" },
-  { name: "MacBook Pro", description: "Laptop" },
+  { name: "MacBook Pro", description: "Laptop", image: "/computers/poseidon.png" },
   { name: "iPhone 15 Pro", description: "Phone" },
   { name: "Optiplex 3050 Micro", description: "Homeserver", image: "/computers/apollo.png"  },
   { name: "Hetzner VPS", description: "Datacenter (KVM) server", image: "/computers/artemis.png"  },
