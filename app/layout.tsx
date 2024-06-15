@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 
 export const metadata: Metadata = {
   description: "Quinten Peels - Software engineer living in Baarn, Utrecht",
-  title: { default: "quinten.dev", template: "%s" }
+  title: { default: "quinten.dev - %s", template: "quinten.dev | %s" }
 };
 
 export default function RootLayout({

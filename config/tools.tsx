@@ -1,45 +1,39 @@
-import { Tool } from "@/app/types";
+import { Computer, Tool } from "@/app/types";
 
 export const tools: Tool[] = [
   {
-    name: ".NET Core",
-    image: "/tools/dotnet.png",
-    usage: "My primary language for backend development",
+    name: "Languages",
+    usage: ".NET, Typescript, Python, Java",
   },
   {
-    name: "React",
-    image: "/tools/react.png",
+    name: "Frameworks & Libraries",
+    usage: "React (NextJS), Angular, ASP.NET, Moq, xUnit, MassTransit, Redis, Swagger, Automapper",
+  },
+  {
+    name: "Cloud",
+    usage: "AWS, Azure, DigitalOcean, Hetzner",
+  },
+  {
+    name: "DevOps",
     usage:
-      "Combined with NextJS with Typescript is my usual frontend choice",
+      "Bicep, AWS CDK, Bash, Docker, Kubernetes, Github Actions, Azure DevOps",
   },
   {
-    name: "Docker",
-    image: "/tools/docker.png",
-    usage: "Easiest way to deploy software, containerized software ftw",
+    name: "Principles, architecture and patterns",
+    usage: "SOLID Principles, Clean architecture, Design patterns, microservices, SonarCloud, automated testing (unit, regression), CQRS, Agile/Scrum"
   },
   {
-    name: "CloudFlare",
-    image: "/tools/cloudflare.png",
-    usage: "CDN, DNS, WAF and Pages, using them since 2014",
-  },
-  {
-    name: "Github",
-    image: "/tools/github.png",
-    usage: "Version control & Github Actions",
-  },
-  {
-    name: "AWS",
-    image: "/tools/aws.png",
-    usage: "My preferred Cloud platform for enterprise software",
-  },
+    name: "Software",
+    usage: "Rider, VSCode, Vim, Tableplus, Postman"
+  }
 ];
 
-export const computers: Tool[] = [
-  { name: "Windows", image: null, usage: "Gaming desktop" },
-  { name: 'MacBook Pro (16-inch, Nov 2023, Three T)', image: null, usage: "Laptop" },
-  { name: "iPhone 15 pro", image: null, usage: "Phone" },
-  { name: "Optiplex 3050 Micro", image: null, usage: "Homeserver" },
-  { name: "Hetzner VPS", image: null, usage: "Datacenter (KVM) server" },
+export const computers: Computer[] = [
+  { name: "Windows", description: "Gaming desktop", image: "/computers/hera.png" },
+  { name: "MacBook Pro", description: "Laptop" },
+  { name: "iPhone 15 Pro", description: "Phone" },
+  { name: "Optiplex 3050 Micro", description: "Homeserver", image: "/computers/apollo.png"  },
+  { name: "Hetzner VPS", description: "Datacenter (KVM) server", image: "/computers/artemis.png"  },
 ];
 
 export const certifications: Tool[] = [
@@ -61,11 +55,11 @@ export const certifications: Tool[] = [
   {
     name: "Angular Certified Developer",
     image: "/certifications/angular.png",
-    usage: "Id: 4J1051E"
+    usage: "Id: 4J1051E",
   },
   {
     name: "Github Foundations",
     image: "/certifications/github-foundation.png",
-    usage: "Credly id: 6f00bb83-2ea6-4025-bbb3-ea561fb87921"
-  }
+    usage: "Credly id: 6f00bb83-2ea6-4025-bbb3-ea561fb87921",
+  },
 ];
