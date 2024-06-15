@@ -1,7 +1,13 @@
 export type Tool = {
   name: string;
-  image: string | null;
+  image?: string;
   usage: string;
+};
+
+export type Computer = {
+  name: string;
+  description: string;
+  image?: string;
 };
 
 export type Client = {
