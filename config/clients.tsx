@@ -6,10 +6,10 @@ export const clients: Client[] = [
     companyLogo: "/clients/asml.jpeg",
     current: true,
     role: "IT Consultant",
-    description: "TBC",
-    start_date: "",
+    description: "Currently working in a system team which is responsible for integrating software plugins from other teams for ASML's analytic platform. Most integration is automated and mostly done using Bamboo pipelines. These pipelines are creating using Bamboo's Java SDK (IaC). Shortcomings are scripted using Python and Bash.",
+    start_date: "2024",
     end_date: "",
-    tech_tags: ["java", "devops", "Azure", "Kubernetes"]
+    tech_tags: ["Java", "Python", "Bash", "DevOps", "CI/CD", "IaC", "Agile/SAFe", "Automated testing", "Jira", "Confluence", "Bamboo"]
   },
   {
     companyName: "OnlyOnce",
@@ -19,7 +19,7 @@ export const clients: Client[] = [
     description: "A SaaS startup I'm running with my dad. I'm responsible for developing the backend software, which are dotnet API's running in containers on a EC2 instance with Docker and Traefik. Also setting up CI/CD pipelines with Github actions and monitoring the software with CloudWatch and custom alerts.",
     start_date: "",
     end_date: "",
-    tech_tags: ["dotnet", "react", "postgres", "Docker", "Github", "DevOps", "AWS"]
+    tech_tags: ["dotnet", "React", "Postgres", "Docker", "Github", "DevOps", "AWS"]
   },
   {
     companyName: "BKR",
@@ -39,7 +39,7 @@ export const clients: Client[] = [
     description: "My first job after graduation. I worked for RoyalForaHolland (RFH) via Conclusion where I worked in a team writing software for RFH's logistics. Most of the software that I developed were AWS .NET API Lambda and sometimes React applications. Our team developed, deployed and monitored the software ourself.",
     start_date: "2020",
     end_date: "2022",
-    tech_tags: ["dotnet", "AWS", "IaC", "AWS CDK", "Lambda", "Agile/Scrum", "Jira", "Azure DevOps", "react"]
+    tech_tags: ["dotnet", "AWS", "IaC", "AWS CDK", "Lambda", "Agile/Scrum", "Jira", "Azure DevOps", "React"]
   },
   {
     companyName: "Itonomy",
@@ -59,7 +59,7 @@ export const clients: Client[] = [
     description: "As a sidejob I helped building features for the starup CargoSnap, which was a Laravel MCV application.",
     start_date: "2018",
     end_date: "2018",
-    tech_tags: ["Laravel", "MySQL", "Trello", "MVC"]
+    tech_tags: ["Laravel", "MySQL", "Kanban", "MVC"]
   },
   {
     companyName: "Experius",
