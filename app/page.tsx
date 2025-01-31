@@ -13,10 +13,10 @@ export default function Home() {
       </p>
       <p className="pt-6">
         I like making things work, automating stuff, and making sure code goes from a repo to production as smoothly as possible.
-        In the past I've worked with things such as: Kubernetes, infrastructure as code, monitoring solutions, and deployment strategies that help teams move fast without breaking things.
+        In the past I&apos;ve worked with things such as: Kubernetes, infrastructure as code, monitoring solutions, and deployment strategies that help teams move fast without breaking things.
       </p>
       <p className="pt-6">
-        I spend most of my time figuring out how to make deployments faster, systems more reliable, and devs happier. Whether it's fine-tuning a pipeline, setting up monitoring, or messing with containers, I enjoy the whole process.
+        I spend most of my time figuring out how to make deployments faster, systems more reliable, and devs happier. Whether it&apos;s fine-tuning a pipeline, setting up monitoring, or messing with containers, I enjoy the whole process.
       </p>
       <p className="pt-6">
         Outside of work, I spend my time researching new tech, playing video games, listening to music, driving my Seat Leon, lifting weights, and cooking a good meal afterwards.
