@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Navbar from "../components/Navbar";
 
 export const metadata: Metadata = {
-  description: "Quinten Peels - Software engineer living in Baarn, Utrecht",
+  description: "Quinten Peels - DevOps engineer living in Baarn, Utrecht",
   title: { default: "quinten.dev - %s", template: "quinten.dev | %s" }
 };
 
