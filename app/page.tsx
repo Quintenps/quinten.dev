@@ -9,21 +9,17 @@ export default function Home() {
     <div className="max-w-screen-md leading-loose">
       <h3 className="font-semibold text-lg pt-6">A little bit about myself</h3>
       <p className="pt-6">
-        I&apos;m a full stack developer living in Baarn, The Netherlands. I
-        graduated with a BSc in software engineering and a degree in visual
-        design.
+        I&apos;m a DevOps Engineer based in Baarn, The Netherlands, with a background in software engineering.
       </p>
       <p className="pt-6">
-        When it comes down to software development, I don&apos;t like to
-        restrict myself to only writing code. Instead, I like to talk with the
-        client about the functionality, requirements and ideas, prototype and
-        think about UX, write beautiful code and deploy it to the cloud. Hence
-        the term <span className="italic underline">full stack developer</span>.
+        I like making things work, automating stuff, and making sure code goes from a repo to production as smoothly as possible.
+        In the past I've worked with things such as: Kubernetes, infrastructure as code, monitoring solutions, and deployment strategies that help teams move fast without breaking things.
       </p>
       <p className="pt-6">
-        In my free time I like to spend my time researching new tech, playing
-        video games, listening to music, driving my Seat Leon, do weightlifting
-        and cook myself a tasty meal afterwards.
+        I spend most of my time figuring out how to make deployments faster, systems more reliable, and devs happier. Whether it's fine-tuning a pipeline, setting up monitoring, or messing with containers, I enjoy the whole process.
+      </p>
+      <p className="pt-6">
+        Outside of work, I spend my time researching new tech, playing video games, listening to music, driving my Seat Leon, lifting weights, and cooking a good meal afterwards.
       </p>
     </div>
   );
