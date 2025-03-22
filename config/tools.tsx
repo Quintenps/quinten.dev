@@ -3,7 +3,7 @@ import { Computer, Tool } from "@/app/types";
 export const tools: Tool[] = [
   {
     name: "Languages",
-    usage: ".NET, Typescript, Python, Java",
+    usage: ".NET, Typescript, Python, Java, Bash",
   },
   {
     name: "Frameworks & Libraries",
@@ -24,7 +24,7 @@ export const tools: Tool[] = [
   },
   {
     name: "Software",
-    usage: "Rider, VSCode, Vim, Tableplus, Postman, SonarCloud"
+    usage: "Rider, PyCharm, Intellij, VSCode, Vim, Tableplus, Postman, SonarCloud"
   }
 ];
 
