@@ -16,8 +16,8 @@ export default function Home() {
         I enjoy every step of software development, from talking to stakeholders to deploying the final product.
       </p>
       <p className="pt-6">
-        One step that is often overlooked is the deployment and maintenance of the software. This is where I'm currently focusing on.
-        I'm passionate about automating everything, from the build process to the deployment and monitoring of the software.
+        One step that is often overlooked is the deployment and maintenance of the software. This is where I&apos;m currently focusing on.
+        I&apos;m passionate about automating everything, from the build process to the deployment and monitoring of the software.
       </p>
       <p className="pt-6">
         Outside of work, I spend my time researching new tech, playing video games, listening to music, driving my Seat Leon, lifting weights, and cooking a good meal afterwards.
