@@ -14,11 +14,11 @@ export const experiences: Experience[] = [
   {
     companyName: "OnlyOnce",
     companyLogo: "/clients/onlyonce.png",
-    current: true,
+    current: false,
     role: "Lead Software Engineer",
     description: "Co-founder of a SaaS startup, where I lead development. The platform runs on .NET APIs hosted in Docker containers on AWS EC2, managed with Traefik. I also maintain the CI/CD pipelines using GitHub Actions and monitor system health via CloudWatch and custom alerting mechanisms.",
-    start_date: "",
-    end_date: "",
+    start_date: "2024",
+    end_date: "2025",
     tech_tags: ["dotnet", "React", "Postgres", "Docker", "Github", "DevOps", "AWS"]
   },
   {

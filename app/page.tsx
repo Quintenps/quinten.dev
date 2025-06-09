@@ -12,7 +12,7 @@ export default function Home() {
         I&apos;m a DevOps Engineer based in Baarn, The Netherlands, with a background in software engineering.
       </p>
       <p className="pt-6">
-        I've worked with both small startups and large companies, building software from start to finish.
+        I&apos;ve worked with both small startups and large companies, building software from start to finish.
         I enjoy turning ideas into working products and making sure everything runs smoothly along the way.
       </p>
       <p className="pt-6">
