@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="flex flex-col md:flex-row text-gray-200">
           <Navbar />
-          <main className="p-12 z-0 w-full">
+          <main className="p-6 md:p-12 z-0 w-full">
           {children}
           </main>
       </body>

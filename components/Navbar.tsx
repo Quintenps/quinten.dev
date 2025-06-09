@@ -27,7 +27,7 @@ export default function Navbar() {
         </div>
         <button
           type="button"
-          className="md:hidden flex items-center opacity-90 hover:opacity-100 cursor-pointer text-white w-10 h-10 relative focus:outline-none"
+          className="md:hidden flex items-center opacity-90 hover:opacity-100 cursor-pointer text-white w-10 h-10 relative focus:outline-none self-center"
           onClick={toggle}
           aria-label="Open main menu"
         >
@@ -36,22 +36,22 @@ export default function Navbar() {
             <span
               aria-hidden="true"
               className={
-                "block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out " +
-                (display ? "rotate-45" : "-translate-y-1.5")
+          "block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out " +
+          (display ? "rotate-45" : "-translate-y-1.5")
               }
             ></span>
             <span
               aria-hidden="true"
               className={
-                "block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out " +
-                (display ? "opacity-0" : "")
+          "block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out " +
+          (display ? "opacity-0" : "")
               }
             ></span>
             <span
               aria-hidden="true"
               className={
-                "block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out " +
-                (display ? "-rotate-45" : "translate-y-1.5")
+          "block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out " +
+          (display ? "-rotate-45" : "translate-y-1.5")
               }
             ></span>
           </div>
@@ -75,8 +75,8 @@ export default function Navbar() {
 
       <div
         className={
-          "backdrop-blur-sm z-10 w-full min-h-screen top-20 bg-black bg-opacity-70 " +
-          (display ? "fixed" : "hidden")
+          "backdrop-blur-sm z-10 fixed p-12 inset-0 bg-black bg-opacity-70 " +
+          (display ? "" : "hidden")
         }
       >
         <div className="flex md:hidden my-12 flex-col gap-y-8">
