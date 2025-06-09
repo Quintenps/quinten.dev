@@ -3,7 +3,7 @@ import { Experience } from "@/app/types";
 export const experiences: Experience[] = [
   {
     companyName: "ASML",
-    companyLogo: "/clients/asml.jpeg",
+    companyLogo: "/experiences/asml.jpeg",
     current: true,
     role: "IT Consultant",
     description: "Part of a systems integration team responsible for integrating software from multiple development teams into ASML's analytics platform. Integration processes are largely automated using Bamboo pipelines, developed via Bamboo's Java SDK (Infrastructure as Code). Additional scripting is handled using Python and Bash",
@@ -13,7 +13,7 @@ export const experiences: Experience[] = [
   },
   {
     companyName: "OnlyOnce",
-    companyLogo: "/clients/onlyonce.png",
+    companyLogo: "/experiences/onlyonce.png",
     current: false,
     role: "Lead Software Engineer",
     description: "Co-founder of a SaaS startup, where I lead development. The platform runs on .NET APIs hosted in Docker containers on AWS EC2, managed with Traefik. I also maintain the CI/CD pipelines using GitHub Actions and monitor system health via CloudWatch and custom alerting mechanisms.",
@@ -23,7 +23,7 @@ export const experiences: Experience[] = [
   },
   {
     companyName: "BKR",
-    companyLogo: "/clients/bkr.webp",
+    companyLogo: "/experiences/bkr.webp",
     current: false,
     role: "IT Consultant",
     description: "Contributed to the KYC project at BKR, which was heavily delayed. By refactoring critical parts of the codebase and completing outstanding features, I successfully helped bring the application to production. The system consists of .NET APIs and MVC applications.",
@@ -33,7 +33,7 @@ export const experiences: Experience[] = [
   },
   {
     companyName: "Conclusion",
-    companyLogo: "/clients/conclusion.jpg",
+    companyLogo: "/experiences/conclusion.jpg",
     current: false,
     role: "Software Engineer",
     description: "Started my career at Conclusion, where I was part of a team delivering software for Royal FloraHolland's logistics processes. We developed serverless .NET APIs on AWS Lambda and React frontends. Our responsibilities included the full development lifecycle: building, deploying, and monitoring our services.",
@@ -43,7 +43,7 @@ export const experiences: Experience[] = [
   },
   {
     companyName: "Itonomy",
-    companyLogo: "/clients/itonomy.jpeg",
+    companyLogo: "/experiences/itonomy.jpeg",
     current: false,
     role: "Graduation internship",
     description: "Developed a feature-based deployment system using Kubernetes and Magento 2 as part of my graduation project. The goal was to create isolated environments to prevent conflicts between Magento modules and improve quality assurance during testing.",
@@ -53,7 +53,7 @@ export const experiences: Experience[] = [
   },
   {
     companyName: "CargoSnap",
-    companyLogo: "/clients/cargosnap.png",
+    companyLogo: "/experiences/cargosnap.png",
     current: false,
     role: "Sidejob",
     description: "Contributed to feature development for the CargoSnap startup, working on a Laravel MVC application as a part-time developer.",
@@ -63,7 +63,7 @@ export const experiences: Experience[] = [
   },
   {
     companyName: "Experius",
-    companyLogo: "/clients/experius.png",
+    companyLogo: "/experiences/experius.png",
     current: false,
     role: "Internship",
     description: "During my internship, I developed a Magento 2 module designed to track user behavior and shopping activity. The module collected anonymized metadata and stored it in Elasticsearch for analysis.",
