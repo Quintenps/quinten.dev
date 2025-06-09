@@ -1,9 +1,9 @@
 "use client";
 
-import { Client } from "@/app/types";
+import { Experience } from "@/app/types";
 import Image from "next/image";
 
-export default function ClientCard({ client }: { client: Client }) {
+export default function ExperienceCard({ experience: client }: { readonly experience: Experience }) {
   return (
     <div className="px-3 border bg-white bg-opacity-5 text-white text-opacity-80 hover:text-opacity-100 border-white border-opacity-10">
       <div className="py-6 flex flex-row min-h-40 gap-4">

@@ -10,7 +10,7 @@ export type Computer = {
   image?: string;
 };
 
-export type Client = {
+export type Experience = {
   companyName: string;
   companyLogo: string;
   current: boolean;

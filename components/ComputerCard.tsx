@@ -2,7 +2,7 @@
 
 import { Computer } from "@/app/types";
 
-export default function ToolCard({ computer }: { computer: Computer }) {
+export default function ToolCard({ computer }: { readonly computer: Computer }) {
   return (
     <div className="flex flex-col p-4 text-pretty text-ellipsis border bg-white bg-opacity-5 text-white text-opacity-80 hover:text-opacity-100 border-white border-opacity-10">
       <div className="flex flex-row">

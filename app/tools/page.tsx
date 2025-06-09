@@ -14,7 +14,7 @@ export default function Tools() {
         <h3 className="font-semibold text-lg pb-2">Stuff I work with</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {tools.map((tool, index) => (
-            <ToolCard tool={tool} key={index} />
+            <ToolCard tool={tool} key={tool.name} />
           ))}
         </div>
       </div>
@@ -22,7 +22,7 @@ export default function Tools() {
         <h3 className="font-semibold text-lg pb-2">Computers</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {computers.map((computer, index) => (
-            <ComputerCard computer={computer} key={index} />
+            <ComputerCard computer={computer} key={computer.name} />
           ))}
         </div>
       </div>
@@ -30,7 +30,7 @@ export default function Tools() {
         <h3 className="font-semibold text-lg pb-2">Certifications</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {certifications.map((tool, index) => (
-            <ToolCard tool={tool} key={index} />
+            <ToolCard tool={tool} key={tool.name} />
           ))}
         </div>
       </div>
