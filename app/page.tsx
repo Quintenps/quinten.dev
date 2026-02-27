@@ -85,7 +85,7 @@ export default async function Home() {
             </div>
             <div>
               <h1 className="mb-1 text-2xl font-bold leading-tight uppercase tracking-tight font-mono">
-                <span className="bg-linear-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-emerald-600 to-teal-600 dark:from-emerald-400 dark:to-teal-400 bg-clip-text text-transparent">
                   Quinten Peels
                 </span>
               </h1>
@@ -102,13 +102,13 @@ export default async function Home() {
           <h2 className="mb-4 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-500 font-mono">
             About
           </h2>
-          <p className="mb-3 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+          <p className="mb-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
             I&apos;m a DevOps Engineer with {new Date().getFullYear() - 2019}+ years of experience, bringing a unique full-stack development background that bridges the gap between software engineering and operations. My expertise spans .NET, React, and AWS, with a current focus on GitOps (IaC), Kubernetes, CI/CD pipelines, and Python automation.
           </p>
-          <p className="mb-3 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+          <p className="mb-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
             My development background means I actually understand what devs need from their infrastructure. I build automation and deployment workflows that make teams&apos; lives easier, not harder.
           </p>
-          <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+          <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
             Outside of work, I&apos;m usually checking out new tech on Hacker News, Gaming, Cooking (Eating), Powerlifting, or enjoy driving (or cleaning!) my Seat Leon.
           </p>
         </section>
@@ -126,14 +126,14 @@ export default async function Home() {
                   key={index}
                   className={`group flex items-center gap-3 border-l-2 pl-3 transition-all duration-200 animate-fade-in-up rounded-r-md
                     ${isActive
-                      ? "border-blue-500 dark:border-indigo-400 bg-blue-50/50 dark:bg-indigo-950/30"
-                      : "border-slate-300 dark:border-slate-800 hover:border-blue-500 dark:hover:border-indigo-500 hover:bg-slate-100 dark:hover:bg-slate-900/60"
+                      ? "border-emerald-500 dark:border-emerald-400 bg-emerald-50/50 dark:bg-emerald-950/30"
+                      : "border-slate-300 dark:border-slate-800 hover:border-emerald-500 dark:hover:border-emerald-500 hover:bg-slate-100 dark:hover:bg-slate-900/60"
                     }`}
                   style={{ animationDelay: `${300 + index * 100}ms` }}
                 >
                   <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border bg-white dark:bg-slate-900 shadow-sm transition-all duration-200
                     ${isActive
-                      ? "border-blue-200 dark:border-indigo-800 shadow-blue-100 dark:shadow-indigo-950"
+                      ? "border-emerald-200 dark:border-emerald-800 shadow-emerald-100 dark:shadow-emerald-950"
                       : "border-slate-200 dark:border-slate-800 group-hover:shadow-md"
                     }`}>
                     <Image
@@ -149,8 +149,8 @@ export default async function Home() {
                       <div className="flex items-center gap-2">
                         <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">{client.name}</h3>
                         {isActive && (
-                          <span className="inline-flex items-center gap-1 text-[10px] font-mono font-medium text-blue-600 dark:text-indigo-400">
-                            <span className="h-1.5 w-1.5 rounded-full bg-blue-500 dark:bg-indigo-400 animate-pulse" />
+                          <span className="inline-flex items-center gap-1 text-[10px] font-mono font-medium text-emerald-600 dark:text-emerald-400">
+                            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 dark:bg-emerald-400 animate-pulse" />
                             current
                           </span>
                         )}
@@ -231,7 +231,7 @@ export default async function Home() {
                 href="https://linkedin.com/in/quintenpeels"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-slate-600 dark:text-slate-400 transition-all duration-200 hover:text-blue-600 dark:hover:text-indigo-400 hover:-translate-y-0.5 font-mono"
+                className="text-xs text-slate-600 dark:text-slate-400 transition-all duration-200 hover:text-emerald-600 dark:hover:text-emerald-400 hover:-translate-y-0.5 font-mono"
                 aria-label="LinkedIn"
               >
                 LinkedIn
@@ -240,7 +240,7 @@ export default async function Home() {
                 href="https://github.com/quintenps"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-slate-600 dark:text-slate-400 transition-all duration-200 hover:text-blue-600 dark:hover:text-indigo-400 hover:-translate-y-0.5 font-mono"
+                className="text-xs text-slate-600 dark:text-slate-400 transition-all duration-200 hover:text-emerald-600 dark:hover:text-emerald-400 hover:-translate-y-0.5 font-mono"
                 aria-label="GitHub"
               >
                 GitHub
