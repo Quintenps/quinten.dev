@@ -19,9 +19,9 @@ export default async function Home() {
       logo: "/clients/bkr.webp"
     },
     {
-      name: "Conclusion",
+      name: "RoyalFloraHolland",
       year: "2020-2022",
-      logo: "/clients/conclusion.jpg"
+      logo: "/clients/royalfloraholland.jpeg"
     },
     {
       name: "Itonomy",
@@ -109,7 +109,7 @@ export default async function Home() {
             My development background means I actually understand what devs need from their infrastructure. I build automation and deployment workflows that make teams&apos; lives easier, not harder.
           </p>
           <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
-            Outside of work, I&apos;m usually checking out new tech on Hacker News, cooking, powerlifting, or enjoy driving (or cleaning!) my Seat Leon.
+            Outside of work, I&apos;m usually checking out new tech on Hacker News, Gaming, Cooking (Eating), Powerlifting, or enjoy driving (or cleaning!) my Seat Leon.
           </p>
         </section>
 
@@ -122,10 +122,10 @@ export default async function Home() {
             {clients.map((client, index) => (
               <div
                 key={index}
-                className="group flex items-center gap-3 border-l-2 border-slate-300 dark:border-slate-800 pl-3 transition-all hover:border-blue-500 dark:hover:border-indigo-500 animate-fade-in-up"
+                className="group flex items-center gap-3 border-l-2 border-slate-300 dark:border-slate-800 pl-3 transition-all duration-200 hover:border-blue-500 dark:hover:border-indigo-500 hover:translate-x-1 animate-fade-in-up"
                 style={{ animationDelay: `${300 + index * 100}ms` }}
               >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm transition-all duration-200 group-hover:shadow-md group-hover:scale-110">
                   <Image
                     src={client.logo}
                     alt={`${client.name} logo`}
@@ -154,7 +154,7 @@ export default async function Home() {
             {certifications.map((cert, index) => (
               <div
                 key={index}
-                className="flex items-center gap-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 shadow-sm animate-fade-in-up"
+                className="flex items-center gap-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 shadow-sm transition-all duration-200 hover:shadow-md hover:scale-[1.02] hover:border-slate-300 dark:hover:border-slate-700 animate-fade-in-up"
                 style={{ animationDelay: `${700 + index * 50}ms` }}
               >
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 p-1">
@@ -188,7 +188,7 @@ export default async function Home() {
             {tools.map((tool, index) => (
               <div
                 key={index}
-                className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 shadow-sm animate-fade-in-up"
+                className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 shadow-sm transition-all duration-200 hover:shadow-md hover:scale-[1.02] hover:border-slate-300 dark:hover:border-slate-700 animate-fade-in-up"
                 style={{ animationDelay: `${900 + index * 50}ms` }}
               >
                 <h3 className="mb-2 text-xs font-semibold text-slate-900 dark:text-slate-100 font-mono">{tool.category}</h3>
@@ -207,17 +207,12 @@ export default async function Home() {
         {/* Footer */}
         <footer className="border-t border-slate-200 dark:border-slate-800 py-6 animate-fade-in animation-delay-1200">
           <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
-            <div className="text-center sm:text-left">
-              <p className="text-xs text-slate-500 font-mono">
-                © {new Date().getFullYear()} Quinten Peels.
-              </p>
-            </div>
             <div className="flex gap-4">
               <a
                 href="https://linkedin.com/in/quintenpeels"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-slate-600 dark:text-slate-400 transition-colors hover:text-blue-600 dark:hover:text-indigo-400 font-mono"
+                className="text-xs text-slate-600 dark:text-slate-400 transition-all duration-200 hover:text-blue-600 dark:hover:text-indigo-400 hover:-translate-y-0.5 font-mono"
                 aria-label="LinkedIn"
               >
                 LinkedIn
@@ -226,7 +221,7 @@ export default async function Home() {
                 href="https://github.com/quintenps"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-slate-600 dark:text-slate-400 transition-colors hover:text-blue-600 dark:hover:text-indigo-400 font-mono"
+                className="text-xs text-slate-600 dark:text-slate-400 transition-all duration-200 hover:text-blue-600 dark:hover:text-indigo-400 hover:-translate-y-0.5 font-mono"
                 aria-label="GitHub"
               >
                 GitHub
