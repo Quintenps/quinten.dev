@@ -1,24 +1,33 @@
-import "./globals.css";
 import type { Metadata } from "next";
-import Navbar from "../components/Navbar";
+import { Geist, Geist_Mono } from "next/font/google";
+import "./globals.css";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  description: "Quinten Peels - DevOps engineer living in Baarn, Utrecht",
-  title: { default: "quinten.dev - %s", template: "quinten.dev | %s" }
+  title: "Quinten Peels - DevOps Engineer",
+  description: "DevOps Engineer specializing in cloud infrastructure, CI/CD, and automation",
 };
 
 export default function RootLayout({
   children,
-}: {
-  readonly children: React.ReactNode;
-}) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en">
-      <body className="flex flex-col md:flex-row text-gray-200">
-          <Navbar />
-          <main className="p-6 md:p-12 z-0 w-full">
-          {children}
-          </main>
+    <html lang="en" className="dark:[color-scheme:dark]">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        {children}
       </body>
     </html>
   );
