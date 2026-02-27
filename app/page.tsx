@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { headers } from "next/headers";
 
+export const runtime = 'edge';
+
 export default async function Home() {
   const headersList = await headers();
   const cfCountry = headersList.get("cf-ipcountry") || "Unknown";
@@ -88,7 +90,7 @@ export default async function Home() {
             </div>
             <div>
               <h1 className="mb-1 text-2xl font-bold leading-tight uppercase tracking-tight font-mono">
-                <span className="bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 bg-clip-text text-transparent">
                   Quinten Peels
                 </span>
               </h1>
