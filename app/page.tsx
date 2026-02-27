@@ -1,11 +1,6 @@
 import Image from "next/image";
-import { headers } from "next/headers";
-
-export const runtime = 'edge';
 
 export default async function Home() {
-  const headersList = await headers();
-  const cfCountry = headersList.get("cf-ipcountry") || "Unknown";
 
   const clients = [
     {
@@ -215,9 +210,6 @@ export default async function Home() {
             <div className="text-center sm:text-left">
               <p className="text-xs text-slate-500 font-mono">
                 © {new Date().getFullYear()} Quinten Peels.
-              </p>
-              <p className="text-xs text-slate-500 font-mono mt-1">
-                Served from Cloudflare Pages ({cfCountry})
               </p>
             </div>
             <div className="flex gap-4">
