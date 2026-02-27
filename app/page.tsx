@@ -119,29 +119,48 @@ export default async function Home() {
             Experience
           </h2>
           <div className="space-y-4">
-            {clients.map((client, index) => (
-              <div
-                key={index}
-                className="group flex items-center gap-3 border-l-2 border-slate-300 dark:border-slate-800 pl-3 transition-all duration-200 hover:border-blue-500 dark:hover:border-indigo-500 hover:translate-x-1 animate-fade-in-up"
-                style={{ animationDelay: `${300 + index * 100}ms` }}
-              >
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm transition-all duration-200 group-hover:shadow-md group-hover:scale-110">
-                  <Image
-                    src={client.logo}
-                    alt={`${client.name} logo`}
-                    width={24}
-                    height={24}
-                    className="h-6 w-6 object-contain"
-                  />
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center justify-between">
-                    <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">{client.name}</h3>
-                    <span className="text-xs text-slate-500 ml-3 shrink-0 font-mono">{client.year}</span>
+            {clients.map((client, index) => {
+              const isActive = client.year.includes("Present");
+              return (
+                <div
+                  key={index}
+                  className={`group flex items-center gap-3 border-l-2 pl-3 transition-all duration-200 animate-fade-in-up rounded-r-md
+                    ${isActive
+                      ? "border-blue-500 dark:border-indigo-400 bg-blue-50/50 dark:bg-indigo-950/30"
+                      : "border-slate-300 dark:border-slate-800 hover:border-blue-500 dark:hover:border-indigo-500 hover:bg-slate-100 dark:hover:bg-slate-900/60"
+                    }`}
+                  style={{ animationDelay: `${300 + index * 100}ms` }}
+                >
+                  <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border bg-white dark:bg-slate-900 shadow-sm transition-all duration-200
+                    ${isActive
+                      ? "border-blue-200 dark:border-indigo-800 shadow-blue-100 dark:shadow-indigo-950"
+                      : "border-slate-200 dark:border-slate-800 group-hover:shadow-md"
+                    }`}>
+                    <Image
+                      src={client.logo}
+                      alt={`${client.name} logo`}
+                      width={24}
+                      height={24}
+                      className="h-6 w-6 object-contain"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">{client.name}</h3>
+                        {isActive && (
+                          <span className="inline-flex items-center gap-1 text-[10px] font-mono font-medium text-blue-600 dark:text-indigo-400">
+                            <span className="h-1.5 w-1.5 rounded-full bg-blue-500 dark:bg-indigo-400 animate-pulse" />
+                            current
+                          </span>
+                        )}
+                      </div>
+                      <span className="text-xs text-slate-500 ml-3 shrink-0 font-mono">{client.year}</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
 
