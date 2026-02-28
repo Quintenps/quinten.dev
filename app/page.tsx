@@ -74,7 +74,7 @@ export default async function Home() {
         {/* Hero Section */}
         <section className="py-12 animate-fade-in">
           <div className="flex items-start gap-4">
-            <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full border border-slate-200 dark:border-slate-800">
+            <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800">
               <Image
                 src="/quinten.jpg"
                 alt="Quinten Peels"
