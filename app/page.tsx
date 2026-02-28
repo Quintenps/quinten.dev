@@ -129,7 +129,7 @@ export default async function Home() {
                       ? "border-emerald-500 dark:border-emerald-400 bg-emerald-50/50 dark:bg-emerald-950/30"
                       : "border-slate-300 dark:border-slate-800 hover:border-emerald-500 dark:hover:border-emerald-500 hover:bg-slate-100 dark:hover:bg-slate-900/60"
                     }`}
-                  style={{ animationDelay: `${300 + index * 100}ms` }}
+                  style={{ animationDelay: `${150 + index * 50}ms` }}
                 >
                   <div className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border bg-white dark:bg-slate-900 shadow-sm transition-all duration-200
                     ${isActive
@@ -174,7 +174,7 @@ export default async function Home() {
               <div
                 key={index}
                 className="flex items-center gap-3 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 shadow-sm transition-all duration-200 hover:shadow-md hover:scale-[1.02] hover:border-slate-300 dark:hover:border-slate-700 animate-fade-in-up"
-                style={{ animationDelay: `${700 + index * 50}ms` }}
+                style={{ animationDelay: `${350 + index * 30}ms` }}
               >
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 p-1">
                   <Image
@@ -208,7 +208,7 @@ export default async function Home() {
               <div
                 key={index}
                 className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 shadow-sm transition-all duration-200 hover:shadow-md hover:scale-[1.02] hover:border-slate-300 dark:hover:border-slate-700 animate-fade-in-up"
-                style={{ animationDelay: `${900 + index * 50}ms` }}
+                style={{ animationDelay: `${450 + index * 30}ms` }}
               >
                 <h3 className="mb-2 text-xs font-semibold text-slate-900 dark:text-slate-100 font-mono">{tool.category}</h3>
                 <ul className="space-y-0.5">
