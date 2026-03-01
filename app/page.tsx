@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ThemeToggle } from "./components/ThemeToggle";
 
 export default async function Home() {
 
@@ -71,6 +72,12 @@ export default async function Home() {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100">
       <div className="mx-auto max-w-3xl px-6 py-10">
+
+        {/* Top bar */}
+        <div className="flex justify-end mb-2 animate-fade-in">
+          <ThemeToggle />
+        </div>
+
         {/* Hero Section */}
         <section className="py-12 animate-fade-in">
           <div className="flex items-start gap-4">
