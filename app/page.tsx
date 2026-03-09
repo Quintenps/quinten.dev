@@ -67,20 +67,42 @@ export default async function Home() {
     { category: "IaC", items: ["Terraform", "CloudFormation", "GitOps"] },
     { category: "Languages", items: ["Python", "Bash", ".NET", "Java", "Go", "TypeScript"] },
     { category: "Frameworks", items: ["React", "Angular", "Next.js"] },
+    { category: "Workflow", items: ["Jira", "Scrum", "Agile", "Kanban"] },
+    { category: "Version Control", items: ["Git", "GitHub", "Bitbucket"] },
   ];
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100">
-      <div className="mx-auto max-w-3xl px-6 py-10">
+      <div className="mx-auto max-w-2xl px-6 py-8">
 
         {/* Top bar */}
-        <div className="flex justify-end mb-2 animate-fade-in">
+        <div className="mb-2 flex items-center justify-end gap-3 animate-fade-in">
+          <nav className="flex items-center gap-3">
+            <a
+              href="https://github.com/quintenps"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-mono text-slate-600 transition-all duration-200 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400"
+              aria-label="GitHub"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://linkedin.com/in/quintenpeels"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-mono text-slate-600 transition-all duration-200 hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400"
+              aria-label="LinkedIn"
+            >
+              LinkedIn
+            </a>
+          </nav>
           <ThemeToggle />
         </div>
 
         {/* Hero Section */}
-        <section className="py-12 animate-fade-in">
-          <div className="flex items-start gap-4">
+        <section className="py-8 animate-fade-in">
+          <div className="space-y-4">
             <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800">
               <Image
                 src="/quinten.jpg"
@@ -91,12 +113,12 @@ export default async function Home() {
               />
             </div>
             <div>
-              <h1 className="mb-1 text-2xl font-bold leading-tight uppercase tracking-tight font-mono">
+              <h1 className="mb-1 text-2xl font-bold leading-tight tracking-tight font-mono">
                 <span className="bg-linear-to-r from-emerald-600 to-teal-600 dark:from-emerald-400 dark:to-teal-400 bg-clip-text text-transparent">
                   Quinten Peels
                 </span>
               </h1>
-              <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+              <p className="text-base font-medium leading-relaxed text-slate-600 dark:text-slate-400">
                 DevOps Engineer specializing in building scalable cloud infrastructure,
                 automating deployments, and optimizing CI/CD pipelines.
               </p>
@@ -105,7 +127,7 @@ export default async function Home() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="border-t border-slate-200 dark:border-slate-800 py-12 animate-fade-in-up animation-delay-100">
+        <section id="about" className="border-t border-slate-200 dark:border-slate-800 py-9 animate-fade-in-up animation-delay-100">
           <h2 className="mb-4 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-500 font-mono">
             About
           </h2>
@@ -121,7 +143,7 @@ export default async function Home() {
         </section>
 
         {/* Clients Section */}
-        <section id="work" className="border-t border-slate-200 dark:border-slate-800 py-12 animate-fade-in-up animation-delay-200">
+        <section id="work" className="border-t border-slate-200 dark:border-slate-800 py-9 animate-fade-in-up animation-delay-200">
           <h2 className="mb-6 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-500 font-mono">
             Experience
           </h2>
@@ -172,7 +194,7 @@ export default async function Home() {
         </section>
 
         {/* Certifications Section */}
-        <section id="certifications" className="border-t border-slate-200 dark:border-slate-800 py-12 animate-fade-in-up animation-delay-600">
+        <section id="certifications" className="border-t border-slate-200 dark:border-slate-800 py-9 animate-fade-in-up animation-delay-600">
           <h2 className="mb-6 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-500 font-mono">
             Certifications
           </h2>
@@ -206,7 +228,7 @@ export default async function Home() {
         </section>
 
         {/* Tools Section */}
-        <section id="tools" className="border-t border-slate-200 dark:border-slate-800 py-12 animate-fade-in-up animation-delay-800">
+        <section id="tools" className="border-t border-slate-200 dark:border-slate-800 py-9 animate-fade-in-up animation-delay-800">
           <h2 className="mb-6 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-500 font-mono">
             Tools & Technologies
           </h2>
@@ -231,30 +253,7 @@ export default async function Home() {
         </section>
 
         {/* Footer */}
-        <footer className="border-t border-slate-200 dark:border-slate-800 py-6 animate-fade-in animation-delay-1200">
-          <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
-            <div className="flex gap-4">
-              <a
-                href="https://linkedin.com/in/quintenpeels"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs text-slate-600 dark:text-slate-400 transition-all duration-200 hover:text-emerald-600 dark:hover:text-emerald-400 hover:-translate-y-0.5 font-mono"
-                aria-label="LinkedIn"
-              >
-                LinkedIn
-              </a>
-              <a
-                href="https://github.com/quintenps"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs text-slate-600 dark:text-slate-400 transition-all duration-200 hover:text-emerald-600 dark:hover:text-emerald-400 hover:-translate-y-0.5 font-mono"
-                aria-label="GitHub"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-        </footer>
+        <footer className="py-6 animate-fade-in animation-delay-1200" />
       </div>
     </div>
   );
