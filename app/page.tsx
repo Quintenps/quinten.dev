@@ -6,7 +6,7 @@ export default async function Home() {
   const clients = [
     {
       name: "ASML",
-      year: "2024-Present",
+      year: "2024-2026",
       logo: "/clients/asml.jpeg"
     },
     {
@@ -148,6 +148,15 @@ export default async function Home() {
             Experience
           </h2>
           <div className="space-y-4">
+            {/* Searching Card */}
+            <div className="flex items-center gap-3 border-l-2 border-emerald-400 pl-3 bg-emerald-50/30 dark:bg-emerald-950/20 rounded-r-md p-2 animate-fade-in-up">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center">
+                <span className="h-2 w-2 rounded-full bg-emerald-500 dark:bg-emerald-400 animate-pulse" />
+              </div>
+              <div className="flex-1 min-w-0">
+                <p className="text-sm font-medium text-emerald-700 dark:text-emerald-300">Searching for next opportunity</p>
+              </div>
+            </div>
             {clients.map((client, index) => {
               const isActive = client.year.includes("Present");
               return (
