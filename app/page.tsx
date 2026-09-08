@@ -148,13 +148,28 @@ export default async function Home() {
             Experience
           </h2>
           <div className="space-y-4">
-            {/* Searching Card */}
-            <div className="flex items-center gap-3 border-l-2 border-emerald-400 pl-3 bg-emerald-50/30 dark:bg-emerald-950/20 rounded-r-md p-2 animate-fade-in-up">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center">
-                <span className="h-2 w-2 rounded-full bg-emerald-500 dark:bg-emerald-400 animate-pulse" />
+            {/* NS Card - Current */}
+            <div className="group flex items-center gap-3 border-l-2 pl-3 transition-all duration-200 animate-fade-in-up rounded-r-md border-emerald-500 dark:border-emerald-400 bg-emerald-50/50 dark:bg-emerald-950/30">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border bg-white dark:bg-slate-900 shadow-sm border-emerald-200 dark:border-emerald-800 shadow-emerald-100 dark:shadow-emerald-950">
+                <Image
+                  src="/clients/ns.jpg"
+                  alt="NS logo"
+                  width={24}
+                  height={24}
+                  className="h-6 w-6 object-contain"
+                />
               </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-sm font-medium text-emerald-700 dark:text-emerald-300">Searching for next opportunity</p>
+              <div className="flex-1">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">NS</h3>
+                    <span className="inline-flex items-center gap-1 text-[10px] font-mono font-medium text-emerald-600 dark:text-emerald-400">
+                      <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 dark:bg-emerald-400 animate-pulse" />
+                      current
+                    </span>
+                  </div>
+                  <span className="text-xs text-slate-500 ml-3 shrink-0 font-mono">2026-now</span>
+                </div>
               </div>
             </div>
             {clients.map((client, index) => {
