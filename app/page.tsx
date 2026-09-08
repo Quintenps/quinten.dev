@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ThemeToggle } from "./components/ThemeToggle";
 
-export default async function Home() {
+export default function Home() {
 
   const clients = [
     {
