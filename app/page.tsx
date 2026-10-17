@@ -102,8 +102,8 @@ export default function Home() {
 
         {/* Hero Section */}
         <section className="py-8 animate-fade-in">
-          <div className="space-y-4">
-            <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-xl border border-slate-200 dark:border-slate-800">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+            <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-full border border-slate-200 dark:border-slate-800">
               <Image
                 src="/quinten.jpg"
                 alt="Quinten Peels"
@@ -114,7 +114,7 @@ export default function Home() {
             </div>
             <div>
               <h1 className="mb-1 text-2xl font-bold leading-tight tracking-tight font-mono">
-                <span className="bg-linear-to-r from-emerald-600 to-teal-600 dark:from-emerald-400 dark:to-teal-400 bg-clip-text text-transparent">
+                <span className="text-[var(--accent)]">
                   Quinten Peels
                 </span>
               </h1>

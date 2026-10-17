@@ -6,9 +6,9 @@
   --paper: #f1f3ec;
   --muted: #53635a;
   --surface: #fbfcf7;
-  --accent-soft: #f3ded5;
+  --accent-soft: #efe5d0;
   --line: #cbd3c9;
-  --accent: #a94431;
+  --accent: #805c26;
   --ink: #1d2923;
   --font-geist-sans: ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-geist-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, monospace;
@@ -38,8 +38,6 @@
   --color-emerald-600: var(--accent);
   --color-emerald-800: var(--line);
   --color-emerald-950: var(--accent-soft);
-  --color-teal-400: var(--accent);
-  --color-teal-600: var(--accent);
   --color-amber-400: var(--accent);
 }
 
@@ -47,9 +45,9 @@
   --paper: #343a3c;
   --muted: #b9c7bd;
   --surface: #444e4b;
-  --accent-soft: #514643;
+  --accent-soft: #4b493f;
   --line: #66766d;
-  --accent: #e5b8a6;
+  --accent: #d8c18b;
   --ink: #d4ded7;
 }
 
