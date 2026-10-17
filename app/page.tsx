@@ -72,7 +72,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-[var(--ink)]">
       <div className="mx-auto max-w-2xl px-6 py-8">
 
         {/* Top bar */}
@@ -131,13 +131,13 @@ export default function Home() {
           <h2 className="mb-4 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-500 font-mono">
             About
           </h2>
-          <p className="mb-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+          <p className="mb-3 text-sm leading-relaxed text-slate-600 dark:text-[var(--muted)]">
             I&apos;m a DevOps Engineer with {new Date().getFullYear() - 2019}+ years of experience, bringing a unique full-stack development background that bridges the gap between software engineering and operations. My expertise spans .NET, React, and AWS, with a current focus on GitOps (IaC), Kubernetes, CI/CD pipelines, and Python automation.
           </p>
-          <p className="mb-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+          <p className="mb-3 text-sm leading-relaxed text-slate-600 dark:text-[var(--muted)]">
             My development background means I actually understand what devs need from their infrastructure. I build automation and deployment workflows that make teams&apos; lives easier, not harder.
           </p>
-          <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+          <p className="text-sm leading-relaxed text-slate-600 dark:text-[var(--muted)]">
             Outside of work, I&apos;m usually checking out new tech on Hacker News, Gaming, Cooking (Eating), Powerlifting, or enjoy driving (or cleaning!) my Seat Leon.
           </p>
         </section>
@@ -162,7 +162,7 @@ export default function Home() {
               <div className="flex-1">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">NS</h3>
+                    <h3 className="text-base font-semibold text-[var(--ink)]">NS</h3>
                     <span className="inline-flex items-center gap-1 text-[10px] font-mono font-medium text-emerald-600 dark:text-emerald-400">
                       <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 dark:bg-emerald-400 animate-pulse" />
                       current
@@ -200,7 +200,7 @@ export default function Home() {
                   <div className="flex-1">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
-                        <h3 className="text-base font-semibold text-slate-900 dark:text-slate-100">{client.name}</h3>
+                        <h3 className="text-base font-semibold text-[var(--ink)]">{client.name}</h3>
                         {isActive && (
                           <span className="inline-flex items-center gap-1 text-[10px] font-mono font-medium text-emerald-600 dark:text-emerald-400">
                             <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 dark:bg-emerald-400 animate-pulse" />
@@ -239,7 +239,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <h3 className="text-xs font-semibold text-slate-900 dark:text-slate-100 truncate">
+                  <h3 className="text-xs font-semibold text-[var(--ink)] truncate">
                     {cert.name}
                   </h3>
                   <p className="text-xs text-slate-500 dark:text-slate-500 font-mono mt-0.5">
@@ -263,7 +263,7 @@ export default function Home() {
                 className="rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-3 shadow-sm transition-all duration-200 hover:shadow-md hover:scale-[1.02] hover:border-slate-300 dark:hover:border-slate-700 animate-fade-in-up"
                 style={{ animationDelay: `${450 + index * 30}ms` }}
               >
-                <h3 className="mb-2 text-xs font-semibold text-slate-900 dark:text-slate-100 font-mono">{tool.category}</h3>
+                <h3 className="mb-2 text-xs font-semibold text-[var(--ink)] font-mono">{tool.category}</h3>
                 <ul className="space-y-0.5">
                   {tool.items.map((item, itemIndex) => (
                     <li key={itemIndex} className="text-xs text-slate-600 dark:text-slate-400 font-mono">

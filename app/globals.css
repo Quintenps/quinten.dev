@@ -3,34 +3,59 @@
 @variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --paper: #f1f3ec;
+  --muted: #53635a;
+  --surface: #fbfcf7;
+  --accent-soft: #f3ded5;
+  --line: #cbd3c9;
+  --accent: #a94431;
+  --ink: #1d2923;
   --font-geist-sans: ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-geist-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, monospace;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--paper);
+  --color-foreground: var(--ink);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-slate-50: var(--paper);
+  --color-slate-100: var(--surface);
+  --color-slate-200: var(--line);
+  --color-slate-300: var(--line);
+  --color-slate-400: var(--muted);
+  --color-slate-500: var(--muted);
+  --color-slate-600: var(--muted);
+  --color-slate-700: var(--ink);
+  --color-slate-800: var(--line);
+  --color-slate-900: var(--surface);
+  --color-slate-950: var(--paper);
+  --color-emerald-50: var(--accent-soft);
+  --color-emerald-100: var(--accent-soft);
+  --color-emerald-200: var(--line);
+  --color-emerald-400: var(--accent);
+  --color-emerald-500: var(--accent);
+  --color-emerald-600: var(--accent);
+  --color-emerald-800: var(--line);
+  --color-emerald-950: var(--accent-soft);
+  --color-teal-400: var(--accent);
+  --color-teal-600: var(--accent);
+  --color-amber-400: var(--accent);
 }
 
 .dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+  --paper: #343a3c;
+  --muted: #b9c7bd;
+  --surface: #444e4b;
+  --accent-soft: #514643;
+  --line: #66766d;
+  --accent: #e5b8a6;
+  --ink: #d4ded7;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--paper);
+  color: var(--ink);
   font-family: Arial, Helvetica, sans-serif;
 }
 
